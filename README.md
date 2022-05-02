@@ -1,7 +1,5 @@
 # Autonomous-Crawlspace-Inspection-Robot
-Tennessee Tech ECE 4961 Capstone Project Autonomous Crawlspace Inspection Robot
-
-## Autonomous-Crawlspace-Inspection-Robot-Capstone-Team-1
+Tennessee Tech ECE 4961 Capstone Project Spring-Fall 2022
 
 # Goals and Aspirations of The Project: 
 

@@ -62,7 +62,7 @@ i.e. What can the robot do?
 * James (Jim) Camp - Senior Mechatronics Major - Envronmental Sensor Subsystem Developer - Delegator 
 * John-Caleb (JC) Williams - Senior Electrical Engineering Major - Navigation Subsystem Developer - Treasurer
 * John Harris - Senior Electrical Engineeirng Major - Power Subsystem Developer - Secretary
-* Joseph Thomas - Senior Mechatronics Major - Movement Subsytem Developer - Socisl 
+* Joseph Thomas - Senior Electrical Engineering Major - Movement Subsytem Developer - Social 
 
 * Mr. Jesse Roberts - Professor and Falculty Advisor
 

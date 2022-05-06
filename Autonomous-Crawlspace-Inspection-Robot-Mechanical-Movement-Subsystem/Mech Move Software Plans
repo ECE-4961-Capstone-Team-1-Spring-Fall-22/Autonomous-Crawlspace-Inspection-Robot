@@ -1,8 +1,0 @@
-The plan for the software in the mechanical movement subsystem is as follows:
-
-The Arduino Nano Every will receive input from the Raspberry Pi 4 in the Nav subsystem via Serial Communication in the micro USB port on the Arduino.
-The information delivered will be instructions on which way the robot needs to go.
-The arduino will interpret those instructions and then deliver the directions to the L298N motor controller.
-The arduino will use PWM to set the speed of the motors.
-The arduino will receive input from the hall sensors on the motors in order to provide an error detection system for the drive train.
-That error detection adheres to the strategies identified after the FMEA video was made, which arose from the recommendation of Mr. Roberts 

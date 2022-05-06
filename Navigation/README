@@ -1,1 +1,14 @@
+#Navigation Subsystem
+
+
+#Specs, Design, and Analysis:
+This system was required to record and analyze data from Lidar, IR, and Ultrasonic sensors in order to determine navigation and movement instructions for the Autonomous Crawl Space Inspection Robot. 
+Additionally, this system was required to provide images of the crawlspace for operators and homeowners while laying a foundation for manual control with live video feed in the case that the robot is in need of assistance
+
+To match these rquirements, a system was developed where each navigation sensor returns data to the Raspberry Pi, via usb connection or GPIO pin connection. 
+The Raspberry Pi will then input the data collected from the sensors to the robot operating system (ROS) software and utilize various libraries in order to determine navigation protocols.
+
+Circuit Analysis as well as calculations were performed to verify each portion of this subsysem
+
+This README file constitutes a summary, for detailed design information and analysis of each component see signoff files in this repository
 Nav specific readme

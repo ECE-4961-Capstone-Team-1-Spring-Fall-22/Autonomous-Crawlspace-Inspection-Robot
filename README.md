@@ -56,7 +56,18 @@ humidity, temperature, and wood moisture levels.
 # Current Robot Capabilities
 
 Because assembly has not begun yet, at this point the robot can't do anything. However, conceptually several of the capabilities have been fleshed out.
-*
+
+* Sensors for navigation are chosen
+* The main MCU is chosen
+* The lidear system is designed
+* The inital power design is completed
+  *Will need more of the system designed before values can be locked in and approved
+*The Motors and motor drive system is designed
+*A chassis has been chosen
+*The moisture probe sensors has been fully designed
+*The humidity and temperature sensors are designed
+
+For more detail on current designs, see files in sub-system directories
 
 # Who Are We? Mr. Jesse Robert's ECE 4961 Capstone Team 1
 

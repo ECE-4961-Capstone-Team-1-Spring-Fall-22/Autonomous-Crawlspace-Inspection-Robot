@@ -55,7 +55,8 @@ humidity, temperature, and wood moisture levels.
 
 # Current Robot Capabilities
 
-i.e. What can the robot do? 
+Because assembly has not begun yet, at this point the robot can't do anything. However, conceptually several of the capabilities have been fleshed out.
+*
 
 # Who Are We? Mr. Jesse Robert's ECE 4961 Capstone Team 1
 

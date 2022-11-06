@@ -39,33 +39,33 @@ Trial Number (N)|Current(A) | Voltage (V)  |
 
 ## Enviromental Sensing
 ### Temperature
-The sensor was place in different areas with different temperatures and the results were compared to a commercial temperature gauge. 
-| System Temperature Sensor | COTS Temperature Sensor | 
-| :---:                     |    :----:  |
-| Header                     | Title       |
-| Paragraph                  | Text        |
-| Paragraph                  | Text        |
+The sensor was placed outside at different times and compared to the ambient temperature given by Weather.com. The test was preformed like this because the commercially available sensor turned out to be incredibly slow and inaccurate. It was also done in this way because an outdoor enviroment is where the robot will be used. 
+| System Temperature Sensor | Website Listed Temperature | 
+|          :---:            |            :----:          |
+| 62.82                     | 63                         |
+| 61.58                     | 61                         |
 ### Humidity
-The sensor was used outside at different times throughout the day and compared to the results of a comercial humidity meter.
-| System Humidity Sensor | COTS Humidtiy Sensor | 
-| :---:                     |    :----:  |
-| Header                     | Title       |
-| Paragraph                  | Text        |
-| Paragraph                  | Text        |
+The sensor was placed outside at different times and compared to the  humidity given by Weather.com. The test was preformed like this because the commercially available sensor turned out to be incredibly slow and inaccurate. It was also done in this way because an outdoor enviroment is where the robot will be used. 
+| System Humidity Sensor | Website Listed Humidtiy | 
+|         :---:          |          :----:         |
+| 82.25                  | 84                      |
+| 87.10                  | 89                      |
 
 ### Moisture Content
-The Moisture Probe was first tested using axial resistors so that a know value could be tested. The resistors were also checked on a multimeter so that the true value could be compared along with the listed value.
+The Moisture Probe was first tested using axial resistors so that a know value could be tested. The resistors were also checked on a multimeter so that the true value could be compared along with the listed value. This test provided limited results due to the availablity of resistors to test. However, it is secondary to the full moisture content testing and was mostly used for troubleshooting.
 | Known Resistance | Multimeter Result | Probe Result |
-| :---:                     |    :----:  |   :----:  |
-| Header                     | Title       |          |
-| Paragraph                  | Text        |       |
-| Paragraph                  | Text        |      |
+|       :---:      |       :----:      |    :----:    |
+| 1 MΩ             | 1.02 MΩ           | 1.02 MΩ      |
+| 2.2 MΩ           | 2.23 MΩ           | 2.23 MΩ      |
+| 4.7 MΩ           | 4.83 MΩ           | 4.82 MΩ      |
+| 10 MΩ            | 9.88 MΩ           | 9.78 MΩ      |
+| 47 MΩ            | 51 MΩ             | 46M MΩ       |
 
 The system was used on blocks of wood with differing moisture contents and compared to the results given by a commercial wood moisture probe.
-| System Moisture Content Probe | COTS Moisture Content Probe | 
-| :---:                     |    :----:  |
-| Header                     | Title       |
-| Paragraph                  | Text        |
-| Paragraph                  | Text        |
+| Measured Piece | System Moisture Content Probe | COTS Moisture Content Probe | 
+| :---:                     |    :----:  |    :----:  |  
+| Secon Table                  | Title       | Title       |
+| Big Board                  | Text        | Title       |
+| Paragraph                  | Text        | Title       |
 
 ## Movement

@@ -52,14 +52,16 @@ The sensor was placed outside at different times and compared to the  humidity g
 | 87.10                  | 89                      |
 
 ### Moisture Content
-The Moisture Probe was first tested using axial resistors so that a know value could be tested. The resistors were also checked on a multimeter so that the true value could be compared along with the listed value. This test provided limited results due to the availablity of resistors to test. However, it is secondary to the full moisture content testing and was mostly used for troubleshooting.
-| Known Resistance | Multimeter Result | Probe Result |
-|       :---:      |       :----:      |    :----:    |
-| 1 MΩ             | 1.02 MΩ           | 1.02 MΩ      |
-| 2.2 MΩ           | 2.23 MΩ           | 2.23 MΩ      |
-| 4.7 MΩ           | 4.83 MΩ           | 4.82 MΩ      |
-| 10 MΩ            | 9.88 MΩ           | 9.78 MΩ      |
-| 47 MΩ            | 51 MΩ             | 46M MΩ       |
+The Moisture Probe was first tested using axial resistors so that a known value could be tested. The resistors were also checked on a multimeter so that the true value could be compared along with the listed value. This test provided limited results due to the availablity of resistors to test. However, it is secondary to the full moisture content testing and was mostly used for troubleshooting.
+| Known Resistance (MΩ) | Multimeter Result (MΩ) | Probe Result (MΩ) |
+|       :---:           |       :----:           |    :----:         |
+| 1                     | 1.02                   | 1.02              |
+| 2.2                   | 2.23                   | 2.23              |
+| 4.7                   | 4.83                   | 4.82              |
+| 10                    | 9.88                   | 9.78              |
+| 47                    | 51.0                   | 46.0              |
+The results above were all found to be accurate within 1% error except for the 47 MΩ test which had about 10% error. This is because it was found that the first two stages had greatly increased accuracy compared to the stages with larger resistors used in the voltage divider. After much research, it was found that Arduino analog read pins prefer a smaller input impedance which was unknown at the time of designing. This could be fixed in future revisions by switching out the microcontroller used. 
+
 
 The system was used on blocks of wood with differing moisture contents and compared to the results given by a commercial wood moisture probe.
 | COTS Moisture Content Probe | System Moisture Content Probe | 
@@ -79,5 +81,6 @@ The system was used on blocks of wood with differing moisture contents and compa
 | 24                          | 22.4                          |
 | 25                          | 23.26                         |
 | 26                          | 23.54                         |
+As can be seen from the table above, the actual moisture content value is not 100% accurate to the commercial probe. However, all values fall within ±3 of the expected percentage value. The collected data shows that the system is detecting changes within the moisture content of plank. Based on the raw resistance values which were seen in the previous section. It is believe some of this error comes from the equation created to convert resistance to wood mositure percentage. 
 
 ## Movement

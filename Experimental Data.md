@@ -62,10 +62,22 @@ The Moisture Probe was first tested using axial resistors so that a know value c
 | 47 MΩ            | 51 MΩ             | 46M MΩ       |
 
 The system was used on blocks of wood with differing moisture contents and compared to the results given by a commercial wood moisture probe.
-| Measured Piece | System Moisture Content Probe | COTS Moisture Content Probe | 
-| :---:                     |    :----:  |    :----:  |  
-| Secon Table                  | Title       | Title       |
-| Big Board                  | Text        | Title       |
-| Paragraph                  | Text        | Title       |
+| COTS Moisture Content Probe | System Moisture Content Probe | 
+| :---:                       |    :----:                     | 
+| 7                           | 6.86                          |
+| 9                           | 7.34                          |
+| 10                          | 8.13                          |
+| 10                          | 8.31                          |
+| 11                          | 9.51                          |
+| 13                          | 11.31                         |
+| 13                          | 14.44                         |
+| 14                          | 15.89                         |
+| 15                          | 12.26                         |
+| 16                          | 17.55                         |
+| 17                          | 16.87                         |
+| 19                          | 18.55                         |
+| 24                          | 22.4                          |
+| 25                          | 23.26                         |
+| 26                          | 23.54                         |
 
 ## Movement

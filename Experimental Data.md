@@ -36,6 +36,12 @@ Trial Number (N)|Current(A) | Voltage (V)  |
 | 1 |       A |        V|
 | 2 |       A |        V|
 | 3 |       A |        V|
+
+###
+The experimental data collected proves that the power subsytem correctly supplies voltage and current to the other subsystems. In addition, a test was run to see how long the battery was capable of powering the system. The battery lasted for **30 minutes** before being unable to provide the current required. The experimental data satisfies the conditions laid out in the project proposal for the power subsystem.
+
+
+
 ## Navigation
 
 

@@ -49,6 +49,7 @@ The sensor was placed outside at different times and compared to the ambient tem
 | 11/6/2022 15:06    | 71.125                         | 70                              | 1.61              | 1.125           |
 | 11/6/2022 16:33    | 66.6875                        | 67                              | 0.47              | 0.3125          |
 | 11/6/2022 21:46    | 66.5375                        | 64                              | 3.96              | 2.5375          |
+| 11/7/2022 17:40    | 65.53                          | 66                              | 0.71              | 0.47            |   
 
 The table shows that the system temperature sensor has exceptional accuarcy when compared to a purchased sensor. MORE ABOUT MAX ERROR AFTER LAST DATA POINT IS IN
 ### Humidity
@@ -62,6 +63,7 @@ The sensor was placed outside at different times and compared to the  humidity g
 | 11/6/2022 15:06    | 83.2                         | 84                            | 0.95              | 0.8              |
 | 11/6/2022 16:33    | 95.4                         | 99                            | 3.64              | 3.6              |
 | 11/6/2022 21:46    | 92.8                         | 96                            | 3.33              | 3.2              |
+| 11/7/2022 17:40    | 37.5                         | 38                            | 1.32              | 0.5              |
 
 The table shows that the humidity sensor is well within out desired range for accuracy. The datasheet for the DHT22 sensor says the accuracy should be ±2 %RH. While this experiment found several points outside this range, it seems to mainly be at the higher humidity values where the accuracy decreases. However, even at these points the accuracy is at a very acceptable level.   MORE ABOUT MAX ERROR AFTER LAST DATA POINT IS IN
 

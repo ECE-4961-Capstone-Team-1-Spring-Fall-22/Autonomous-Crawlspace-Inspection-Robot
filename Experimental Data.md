@@ -5,9 +5,11 @@
 ### Main Power LN 2 & 5
 Trial Number (N)|Current(A) | Voltage (V)  |
 |:---: | :---:|:----:|
-| 1 |       A |        V|
-| 2 |       A |        V|
-| 3 |       A |        V|
+| 1 |       0.526 A |        13.26 V|
+| 2 |       0.627 A |        13.26 V|
+| 3 |       0.675 A |        12.85 V|
+| 4 |       1.265 A |        12.68 V|
+| 5 |       1.326 A |        12.75 V|
 
 ### Navigation LN 7A & 8A
 Trial Number (N)|Current(A) | Voltage (V)  |

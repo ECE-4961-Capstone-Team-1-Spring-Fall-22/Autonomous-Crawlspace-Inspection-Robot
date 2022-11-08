@@ -38,7 +38,7 @@ Trial Number (N)|Current(A) | Voltage (V)  |
 | 3 |       A |        V|
 
 ###
-The experimental data collected proves that the power subsytem correctly supplies voltage and current to the other subsystems. In addition, a test was run to see how long the battery was capable of powering the system. The battery lasted for **__ minutes**, at the desired speed of 1 foot per second the power system could provide enough power to map the . The experimental data satisfies the conditions laid out in the project proposal for the power subsystem.
+The experimental data collected proves that the power subsytem correctly supplies voltage and current to the other subsystems. In addition, a test was run to see how long the battery was capable of powering the system. The battery lasted for **__ minutes**, at the desired speed of 1 foot per second the power system could provide enough power to map a crawlspace up to . The experimental data satisfies the conditions laid out in the project proposal for the power subsystem.
 
 
 

@@ -148,4 +148,5 @@ For this experiment the team wanted to measure the robot’s linear speed. To do
 |9.65       |1.045              |0.3937             |
 |9.58       |1.05               |0.3937             |
 |9.63       |1.047              |0.3937             |
+
 These results show that the average speed of the Croomba is about 1 foot per second which is the desired value. However, the Instantaneous Speed measurements from ROS are incorrect. 0.3937 m/s is equivalent to 1.29 ft/sec, and ROS reported the same speed value consistently. The team believes that the value is being lost in the Publisher-Subscriber Communication that works with ROS. We implemented a Partial Integral Derivative (PID) dynamic compensator, which would be responsible for stability, speed, and accuracy of the robot’s movement system; however, we messed it up big time, and the PID calculation is not all there yet.

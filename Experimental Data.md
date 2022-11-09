@@ -5,35 +5,53 @@
 ### Main Power LN 2 & 5
 Trial Number (N)|Current(A) | Voltage (V)  |
 |:---: | :---:|:----:|
-| 1 |       A |        V|
-| 2 |       A |        V|
-| 3 |       A |        V|
+| 1 |       0.526 A |        13.26 V|
+| 2 |       0.627 A |        13.26 V|
+| 3 |       0.675 A |        12.85 V|
+| 4 |       1.265 A |        12.68 V|
+| 5 |       1.326 A |        12.75 V|
 
 ### Navigation LN 7A & 8A
 Trial Number (N)|Current(A) | Voltage (V)  |
 |:---: | :---:|:----:|
-| 1 |       A |        V|
-| 2 |       A |        V|
-| 3 |       A |        V|
+| 1 |       0.7 A |    5.33 V|
+| 2 |      0.6 A |       5.34 V|
+| 3 |      0.79 A |       5.33 V|
+| 4 |       0.7 A |        12.68 V|
+| 5 |       1.326 A |        12.75 V|
+
 ### Network Router LN 9A & 10A
 Trial Number (N)|Current(A) | Voltage (V)  | 
 |:---: | :---:|:----:|
-| 1 |       A |        V|
-| 2 |       A |        V|
-| 3 |       A |        V|
+| 1 |      0.1 A |       5.3 V|
+| 2 |      0.12 A |       5.32 V|
+| 3 |       0.12 A |       5.31 V|
+| 4 |       0.28 A |        5.31 V|
+| 5 |       0.33 A |        5.3 V|
+
 ### Movement LN 11A & 12A
 Trial Number (N)|Current(A) | Voltage (V)  | 
 |:---: | :---:|:----:|
-| 1 |       A |        V|
-| 2 |       A |        V|
-| 3 |       A |        V|
+| 1 |       0.526 A |        13.26 V|
+| 2 |       0.627 A |        13.26 V|
+| 3 |       0.675 A |        12.85 V|
+| 4 |       1.265 A |        12.68 V|
+| 5 |       1.326 A |        12.75 V|
 
 ### Environmental Sensing  LN 13A & 14A
 Trial Number (N)|Current(A) | Voltage (V)  | 
 |:---: | :---:|:----:|
-| 1 |       A |        V|
-| 2 |       A |        V|
-| 3 |       A |        V|
+| 1 |      0.0642 A |       5.24 V|
+| 2 |       0.0645 A |       5.23 V|
+| 3 |       0.0644 AA |       5.26 V|
+| 4 |       0.0.065 A |        5.31 V|
+| 5 |       0.064 A |        5.3 V|
+
+###
+
+
+
+
 ## Navigation
 
 

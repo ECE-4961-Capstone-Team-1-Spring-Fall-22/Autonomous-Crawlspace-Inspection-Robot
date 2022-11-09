@@ -128,8 +128,8 @@ For the first test we measured the height of the robot with a tape measure. This
 | 2            | 15.1875 inches  |
 
 The above results show that the robot is 15.1875 inches tall. That number is less than 16 inches, and thus the height constraint has been met
-### Drive Motor Rotational Speed
-The purpose of this test is to confirm the robot is moving as fast as it thinks that it is. In this test the robot’s internal measurement of the movement speed within the program was analyzed to determine its validity. Those values were compared against a measurement obtained by using a digital tachometer placed into contact with the drive wheel. The values in the table below are in units of RPMs.
+### Motor Encoders
+The purpose of this test is to confirm that the motor encoders and Arduino software are correctly measuring the rotational speed of the motors. The motor encoders are connected to GPIO pins on the Arduino, and the software reads the frequency of the signals and converts them into a rotational speed. Those values were compared against a measurement obtained by using a digital tachometer placed into contact with the drive wheel. The values in the table below are in units of RPMs.
 |Robot's Reading|Tachometer Reading|
 |:---:          |:---:             |
 |219.7          |220               |
@@ -138,15 +138,14 @@ The purpose of this test is to confirm the robot is moving as fast as it thinks 
 |219.2          |219.9             |
 |220            |220.6             |
 
-These results show that the Autonomous Crawl Space Inspection Robot is correctly measuring its movement speed. 
+These results show that the Arduino program for the motor encoders is correctly measuring its speed. 
 ### Linear Speed
-For this experiment the team wanted to measure the robot’s linear speed. To do this, we measured out 10 feet with a tape measure, and then used a stopwatch to determine how quickly the robot covered that distance. The desired speed is 1 foot per second. The units in the table below are in seconds and feet per second respectively.
-|Travel Time|Speed|
-|:---:      |:---:|
-|5.56       |1.8  |
-|Travel Time|Speed|
-|Travel Time|Speed|
-|Travel Time|Speed|
-|Travel Time|Speed|
-
-These results show that the robot is moving faster than expected. To accomodate for this, the maximum PWM value will need to be lowered.
+For this experiment the team wanted to measure the robot’s linear speed. To do this, we measured out 10 feet with a tape measure, and then used a stopwatch to determine how quickly the robot covered that distance. The desired speed is about 1 foot per second. This gives us the average velocity of the robot, but an instantaneous velocity is also desirable. ROS’s instantaneous speed measurement was also recorded and is displayed below.  respectively.
+|Travel Time|Average Speed(ft/s)|Instant. Speed(m/s)|
+|:---:      |:---:              |:---:              |
+|9.60       |1.05               |0.3937             |
+|9.68       |1.04               |0.3937             |
+|9.65       |1.045              |0.3937             |
+|9.58       |1.05               |0.3937             |
+|9.63       |1.047              |0.3937             |
+These results show that the average speed of the Croomba is about 1 foot per second which is the desired value. However, the Instantaneous Speed measurements from ROS are incorrect. 0.3937 m/s is equivalent to 1.29 ft/sec, and ROS reported the same speed value consistently. The team believes that the value is being lost in the Publisher-Subscriber Communication that works with ROS. We implemented a Partial Integral Derivative (PID) dynamic compensator, which would be responsible for stability, speed, and accuracy of the robot’s movement system; however, we messed it up big time, and the PID calculation is not all there yet.

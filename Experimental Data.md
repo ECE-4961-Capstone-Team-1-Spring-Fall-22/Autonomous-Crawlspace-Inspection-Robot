@@ -83,7 +83,7 @@ The sensor was placed outside at different times and compared to the  humidity g
 | 11/6/2022 21:46    | 92.8                         | 96                            | 3.33              | 3.2              |
 | 11/7/2022 17:40    | 37.5                         | 38                            | 1.32              | 0.5              |
 
-The table shows that the humidity sensor is well within out desired range for accuracy. The datasheet for the DHT22 sensor says the accuracy should be ±2 %RH. While this experiment found several points outside this range, it seems to mainly be at the higher humidity values where the accuracy decreases. However, even at these points the accuracy is at a very acceptable level.  
+The table shows that the humidity sensor is well within our desired range for accuracy. The datasheet for the DHT22 sensor says the accuracy should be ±2 %RH. While this experiment found several points outside this range, it seems to mainly be at the higher humidity values where the accuracy decreases. However, even at these points the accuracy is at a very acceptable level.  
 
 ### Moisture Content
 The Moisture Probe was first tested using axial resistors so that a known value could be tested. The resistors were also checked on a multimeter so that the true value could be compared along with the listed value. This test provided limited results due to the availablity of resistors to test. However, it is secondary to the full moisture content testing and was mostly used for troubleshooting.

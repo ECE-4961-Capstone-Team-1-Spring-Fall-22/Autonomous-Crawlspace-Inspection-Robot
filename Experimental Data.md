@@ -138,7 +138,7 @@ The purpose of this test is to confirm that the motor encoders and Arduino softw
 |219.2          |219.9             |
 |220            |220.6             |
 
-These results show that the Arduino program for the motor encoders is correctly measuring its speed. 
+These results show that the Arduino program for the motor encoders is correctly measuring its speed. The odometry readings are important so that the robot can determine its location in space.
 ### Linear Speed
 For this experiment the team wanted to measure the robot’s linear speed. To do this, we measured out 10 feet with a tape measure, and then used a stopwatch to determine how quickly the robot covered that distance. The desired speed is about 1 foot per second. This gives us the average velocity of the robot, but an instantaneous velocity is also desirable. ROS’s instantaneous speed measurement was also recorded and is displayed below.  respectively.
 |Travel Time|Average Speed(ft/s)|Instant. Speed(m/s)|

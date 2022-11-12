@@ -55,9 +55,15 @@ Trial Number (N)|Current(A) | Voltage (V)  |
 
 ## Navigation
 ### Mapping
-The main job of the systems lidar is to create a map of the surrounding area without having to be provided a manually drawn map by the operator. To ensure that the map is being generated correctly, the perimeter of our test area was measured the error percentage was calculated from the generated map. 
+The main job of the system's lidar is to create a map of the surrounding area without having to be provided a manually drawn map by the operator. To ensure that the map is being generated correctly, the perimeter of our test area was measured and the percent error was calculated. The perimeter of the lidar-generated map was found by measuring the picture at a set zoom and creating a proportion from that value. The areas missed were then measured on the screen and the proportional value was applied to convert into the physical distance. The main focus of this experiment was areas along the perimeter which the lidar missed as the additional points it caught past the perimiter are blocked by the true wall. 
 
-RESULTS
+| Perimeter (ft) | Measured Perimeter (ft) | Percent Error (%) |
+| :------------: | :---------------------: | :---------------: |
+| 47.75          | 45.74                   | 4.39              |
+| 41             | 38.63                   | 6.14              |
+| 41             | 38.68                   | 6.00              |
+
+The results show that the lidar was able to succesfully map the majority of the enclosed areas perimeter as it navigated around the space. In the worst case, it only missed 6.14% of the map. However, this percentage should be mostly negligable because none of the gaps in the map are large enough for the robot to fit through.
 
 ### Imaging
 After adjusting the project's scope, imaging has been reprioritized and will take precedence over autonomous control. Because we plan to stitch the images of the crawlspace together using python and OpenCV, it is essential to test what percentage of the ceiling we can succesfully photograph. We tested this metric by treating the photographs taken as a jigsaw and then finding the area of any spots not recorded and comparing that area to the overall ceiling area.

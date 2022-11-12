@@ -2,7 +2,7 @@
 ## System Testing
 
 ## Power
-In order to verify the power subsystem is meeting all requirements 5 trail runs of measuring the voltage and current of each main subline coming off the battery. To verify that the power system can power the croomba for the length of time required we did two tests to drain the battery completely. We ran a test that simulated the croomba moving constantly forward by applying a constant 5V to the Motor Drivers. We did this two times  
+In order to verify the power subsystem is meeting all requirements 5 trail runs of measuring the voltage and current of each main subline coming off the battery. To verify that the power system can power the croomba for the length of time required we did two tests to drain the battery completely. We ran over an hour and fifteen minutes of trial runs while programming. The power system sucessfully powered all subsytems without outside assistance. 
 ### Main Power LN 2 & 5
 Trial Number (N)|Current(A) | Voltage (V)  |
 |:---: | :---:|:----:|

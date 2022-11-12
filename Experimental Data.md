@@ -53,7 +53,15 @@ Trial Number (N)|Current(A) | Voltage (V)  |
 
 
 ## Navigation
+### Mapping
+The main job of the systems lidar is to create a map of the surrounding area without having to be provided a manually drawn map by the operator. To ensure that the map is being generated correctly, the perimeter of our test area was measured the error percentage was calculated from the generated map. 
 
+RESULTS
+
+### Imaging
+After adjusting the project's scope, imaging has been reprioritized and will take precedence over autonomous control. Because we plan to stitch the images of the crawlspace together using python and OpenCV, it is essential to test what percentage of the ceiling we can succesfully photograph. We tested this metric by treating the photographs taken as a jigsaw and then finding the area of any spots not recorded and comparing that area to the overall ceiling area.
+
+RESULTS
 
 ## Enviromental Sensing
 ### Temperature

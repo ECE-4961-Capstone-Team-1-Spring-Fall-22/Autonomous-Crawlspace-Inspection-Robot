@@ -63,10 +63,18 @@ The main job of the system's lidar is to create a map of the surrounding area wi
 
 The results show that the lidar was able to succesfully map the majority of the enclosed areas perimeter as it navigated around the space. In the worst case, it only missed 6.14% of the map. However, this percentage should be mostly negligable because none of the gaps in the map are large enough for the robot to fit through.
 
-### Imaging
+### Manuevering and Imaging
 After adjusting the project's scope, imaging has been reprioritized and will take precedence over autonomous control. Because we plan to stitch the images of the crawlspace together using python and OpenCV, it is essential to test what percentage of the ceiling we can succesfully photograph. We tested this metric by treating the photographs taken as a jigsaw and then finding the area of any spots not recorded and comparing that area to the overall ceiling area.
 
-RESULTS
+| Total Ceiling Area (ft^2) | Pictures Taken | Area Pictured (ft^2) |
+| :-----------------------: | :------------: | :------------------: |
+| 1044                      | 33             | 7920                 |
+| 1044                      | 36             | 8640                 |
+| 1044                      | 54             | 12960                |
+| 1044                      | 51             | 12240                |
+| 1044                      | 42             | 10080                |
+
+After allowing the robot to run its course, the number of pictures taken can be seen in the table above. The real area captured by each picture was then multiplied by the number of pictures taken to find a value for the full area pictured. While this value will feature some overlap, it is significantly large enough to convince the team that the robot saves pictures that will cover the entire ceiling area. Along with this metric, the photos were flipped through and ceiling landmarks were used to confirm that no part of the ceiling was missed.
 
 ### Wireless Access Point
 The main job of the system's wireless access point is to create a wireless network for communication between the system's main control, the Raspberry Pi, and the system operator in the case that manual control is needed. Adhering to the given constraints, the wireless access point operates on 2.4 GHz and is a private network which requires a password for use. To ensure that the wireless access point was sufficient for use, the distance and overall connectivity and control were tested four times. In each of the four tests, a laptop was connected to the Raspberry Pi at a distance of 100 feet, first on the fourth floor of Brown Hall and secondly on the third floor of Brown Hall. The system was then pinged with 32 bytes of information, and the response time in milliseconds from the laptop to the Raspberry Pi and back was recorded. Finally, the overall system control was tested by opening applications and interacting with the system peripherals such as one of the USB cameras over Microsoft Windows Remote Desktop Protocol.  

@@ -71,7 +71,7 @@ RESULTS
 ### Wireless Access Point
 The main job of the system's wireless access point is to create a wireless network for communication between the system's main control, the Raspberry Pi, and the system operator in the case that manual control is needed. Adhering to the given constraints, the wireless access point operates on 2.4 GHz and is a private network which requires a password for use. To ensure that the wireless access point was sufficient for use, the distance and overall connectivity and control were tested four times. In each of the four tests, a laptop was connected to the Raspberry Pi at a distance of 100 feet, first on the fourth floor of Brown Hall and secondly on the third floor of Brown Hall. The system was then pinged with 32 bytes of information, and the response time in milliseconds from the laptop to the Raspberry Pi and back was recorded. Finally, the overall system control was tested by opening applications and interacting with the system peripherals such as one of the USB cameras over Microsoft Windows Remote Desktop Protocol.  
 
-| Distance From Robot (ft) | Ping Time (ms)| Full Desktop Control? |
+| Distance From Robot (ft) | Average Ping Time (ms)| Full Desktop Control? |
 | :----------------------: | :-----------: | :-------------------: |
 | 100                      | 4             | Yes                   |
 | 100                      | 3             | Yes                   |

@@ -63,16 +63,29 @@ The main job of the system's lidar is to create a map of the surrounding area wi
 
 The results show that the lidar was able to succesfully map the majority of the enclosed areas perimeter as it navigated around the space. In the worst case, it only missed 6.14% of the map. However, this percentage should be mostly negligable because none of the gaps in the map are large enough for the robot to fit through.
 
-### Manuevering and Imaging
+### Manuevering 
+In adherence to movement specifications, the robot needs to be capable of maneuvering through 70 % of the model crawlspace. In order to test the adherence to this requirement, the team created a model crawlspace with a floor consisting of 9 inches by 9-inch square tiles so that it would be easy to identify which tiles the robot had not passed through during its movement cycle. Taking the area of the robot, roughly 12 inches by 12 inches, and tracking the robot through the ROS generated map as well as from the recorded videos, the team members were able to estimate which of the floor tiles the robot had not touched, and therefore how much of the total area of the crawlspace the robot had maneuvered through. Additionally, the robot was initially placed in different corners of the model crawlspace to test the behavior from different initial positions. In this experiment, the total area of the crawlspace was 100 square feet and the total area covered by the robot is calculated and listed, along with the total percentage of the crawlspace area covered during the test. It is worth noting that in addition to the area listed in the table below, the robot often crossed back through past squares, effectively increasing the total area covered by the robot.
+
+| Area Where Present (ft^2) | Percent of Area Covered (%) |
+| :-----------------------: | :-------------------------: | 
+| 86.50                     | 86.50                       | 
+| 91.00                     | 91.00                       | 
+| 82.00                     | 82.00                       | 
+| 76.38                     | 76.38                       |
+| 85.94                     | 85.94                       |
+
+As shown in the above table, the crawlspace inspection robot was able to maneuver through more than 70 % of the model crawlspace area, often maneuvering through more than 80 % of the test zone without getting stuck and needing assistance from the operator. As previously mentioned, the number of un-entered tiles was calcuated and then the total area of the tiles was determined and added together, resulting in the percentage of the crawlspace which the robot had not directly entered. It is important to note that while the robot did not enter 100 % of the tiles in the crawlspace area, not every tile must be entered for an incredibly detailed map to be created within the ROS software. Additionally, as shown later in this document, due to the area of the images captured, the ceiling of the crawlspace can be more than accurately mapped without having to enter each quantized tile of 9 inches by 9 inches. Therefore, it appears that the robot has maneuvered through enough of the crawlspace for the required information of the environment to be captured.  
+
+### Imaging
 After adjusting the project's scope, imaging has been reprioritized and will take precedence over autonomous control. Because we plan to stitch the images of the crawlspace together using python and OpenCV, it is essential to test what percentage of the ceiling we can succesfully photograph. We tested this metric by treating the photographs taken as a jigsaw and then finding the area of any spots not recorded and comparing that area to the overall ceiling area.
 
 | Total Ceiling Area (ft^2) | Pictures Taken | Area Pictured (ft^2) |
 | :-----------------------: | :------------: | :------------------: |
-| 1044                      | 33             | 7920                 |
-| 1044                      | 36             | 8640                 |
-| 1044                      | 54             | 12960                |
-| 1044                      | 51             | 12240                |
-| 1044                      | 42             | 10080                |
+| 100                       | 33             | 7920                 |
+| 100                       | 36             | 8640                 |
+| 100                       | 54             | 12960                |
+| 100                       | 51             | 12240                |
+| 100                       | 42             | 10080                |
 
 After allowing the robot to run its course, the number of pictures taken can be seen in the table above. The real area captured by each picture was then multiplied by the number of pictures taken to find a value for the full area pictured. While this value will feature some overlap, it is significantly large enough to convince the team that the robot saves pictures that will cover the entire ceiling area. Along with this metric, the photos were flipped through and ceiling landmarks were used to confirm that no part of the ceiling was missed.
 
@@ -86,8 +99,7 @@ The main job of the system's wireless access point is to create a wireless netwo
 | 100                      | 3             | Yes                   |
 | 100                      | 3             | Yes                   |
 
-The results show that the lidar was able to succesfully map the majority of the enclosed areas perimeter as it navigated around the space. In the worst case, it only missed 6.14% of the map. However, this percentage should be mostly negligable because none of the gaps in the map are large enough for the robot to fit through.
-
+The results show that the wireless access point is sufficient for the application of the crawlspace inspection robot and that operators will be able to successfully control the robot from well over 70 feet away, allowing for manual control in larger than average home crawlspaces, which would only require a max communication distance of 70 feet.  
 
 ## Enviromental Sensing
 ### Temperature

@@ -198,10 +198,13 @@ For this experiment the team wanted to measure the robot’s linear speed. To do
 These results show that the average speed of the Croomba is about 1 foot per second which is the desired value. However, the Instantaneous Speed measurements from ROS are incorrect. 0.3937 m/s is equivalent to 1.29 ft/sec, and ROS reported the same speed value consistently. The team believes that the value is being lost in the Publisher-Subscriber Communication that works with ROS. We implemented a Partial Integral Derivative (PID) dynamic compensator, which would be responsible for stability, speed, and accuracy of the robot’s movement system; however, we messed it up big time, and the PID calculation is not all there yet.
 ### 30 Degree Incline
 Finally, a test was done to determine whether or not the Croomba could ascend up a 30 degree inclined plane as described in the signoffs. To accomplish this, the team put together some pieces of plywood at a 30 degree angle and set the Croomba on a course to see if it could make its way up the hill. This test was conducted 3 times.
-| Trial Number | Croomba Ascension? |
-|:---:         | :---:              |
-| 1            | No                 |
-| 2            | No                 |
-| 3            | No                 |
 
 The Croomba was unable to go up the steep slope. The team believes this deviation is caused by a lack of traction on the treads as well as a high center of mass on the robot. That high center of mass pulls the robot back down the hill and the front of the bot begins to lose trasction with the ramp. In short, the robot is too top and back heavy, and this leads to the robot wanting to flip onto its back like a turtle when ascending up the incline. 
+
+However, the team lowered the angle of the incline in order to find the maximum angle that the robot could traverse. The results are displayed in the table below.
+| Incline Angle | Croomba Ascension? |
+|:---:          | :---:              |
+| 30            | No                 |
+| 30            | No                 |
+| 30            | No                 |
+| 25            | Yes?               |

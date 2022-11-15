@@ -175,7 +175,7 @@ For the first test we measured the height of the robot with a tape measure. This
 
 The above results show that the robot is 15.1875 inches tall. That number is less than 16 inches, and thus the height constraint has been met
 ### Motor Encoders
-The purpose of this test is to confirm that the motor encoders and Arduino software are correctly measuring the rotational speed of the motors. The motor encoders are connected to GPIO pins on the Arduino, and the software reads the frequency of the signals and converts them into a rotational speed. Those values were compared against a measurement obtained by using a digital tachometer placed into contact with the drive wheel. The values in the table below are in units of RPMs.
+The purpose of this test is to confirm that the motor encoders and Arduino software are correctly measuring the rotational speed of the motors. The motor encoders are connected to GPIO pins on the Arduino, and the software reads the frequency of the signals and converts them into a rotational speed that is displayed in the serial monitor. Those values were compared against a measurement obtained by using a digital tachometer placed into contact with the drive wheel. The values in the table below are in units of RPMs.
 |Robot's Reading|Tachometer Reading|
 |:---:          |:---:             |
 |219.7          |220               |

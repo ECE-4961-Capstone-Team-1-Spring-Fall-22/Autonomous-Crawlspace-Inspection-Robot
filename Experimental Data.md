@@ -187,11 +187,11 @@ The purpose of this test is to confirm that the motor encoders and Arduino softw
 |219.2          |219.9             |
 |220            |220.6             |
 
-These results show that the Arduino program for the motor encoders is correctly measuring its speed. The odometry readings are important so that the robot can determine its location in space.
+These results show that the Arduino program for the motor encoders is correctly measuring its speed.
 ### Linear Speed
 For this experiment the team wanted to measure the robot’s linear speed. The desired speed is about 1 foot per second.  To do this, we measured out 10 feet with a tape measure, and then used a stopwatch to determine how quickly the robot covered that distance. This gives us the average velocity of the robot. 
 
-Additionally, knowing the instantaneous velocity is also useful information to be contained in the datasheet. The instantaneous RPMs were displayed in the Arduino Serial Monitor while the robot was in motion, and those values were recorded and are displayed below. They are also shown in feet/second for ease of comparison.
+The measured values for average velocity were also compared to the instantaneous RPMs that were displayed in the Arduino Serial Monitor while the robot was in motion. Those values were recorded and are displayed below. The RPMs are also converted to in feet/second for ease of comparison.
 |Travel Time|Average Speed(ft/s)|Instant. Speed(RPMs)|Instant. Speed(ft/s)|
 |:---:      |:---:              |:---:               |:---:               |
 |9.75       |1.03               |138.7               |1.09                |

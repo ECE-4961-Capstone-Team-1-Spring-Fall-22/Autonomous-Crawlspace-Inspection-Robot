@@ -189,16 +189,16 @@ The purpose of this test is to confirm that the motor encoders and Arduino softw
 
 These results show that the Arduino program for the motor encoders is correctly measuring its speed. The odometry readings are important so that the robot can determine its location in space.
 ### Linear Speed
-For this experiment the team wanted to measure the robot’s linear speed. To do this, we measured out 10 feet with a tape measure, and then used a stopwatch to determine how quickly the robot covered that distance. The desired speed is about 1 foot per second. This gives us the average velocity of the robot, but an instantaneous velocity is also desirable. ROS’s instantaneous speed measurement was also recorded and is displayed below.
-|Travel Time|Average Speed(ft/s)|Instant. Speed(m/s)|
-|:---:      |:---:              |:---:              |
-|9.60       |1.05               |0.3937             |
-|9.68       |1.04               |0.3937             |
-|9.65       |1.045              |0.3937             |
-|9.58       |1.05               |0.3937             |
-|9.63       |1.047              |0.3937             |
+For this experiment the team wanted to measure the robot’s linear speed. The desired speed is about 1 foot per second.  To do this, we measured out 10 feet with a tape measure, and then used a stopwatch to determine how quickly the robot covered that distance. This gives us the average velocity of the robot. 
 
-These results show that the average speed of the Croomba is about 1 foot per second which is the desired value. However, the Instantaneous Speed measurements from ROS are incorrect. 0.3937 m/s is equivalent to 1.29 ft/sec, and ROS reported the same speed value consistently. The team believes that the value is being lost in the Publisher-Subscriber Communication that works with ROS. We implemented a Partial Integral Derivative (PID) dynamic compensator, which would be responsible for stability, speed, and accuracy of the robot’s movement system; however, we messed it up big time, and the PID calculation is not all there yet.
+Additionally, knowing the instantaneous velocity is also useful information to be contained in the datasheet. The instantaneous RPMs were displayed in the Arduino Serial Monitor while the robot was in motion, and those values were recorded and are displayed below. They are also shown in feet/second for ease of comparison.
+|Travel Time|Average Speed(ft/s)|Instant. Speed(RPMs)|Instant. Speed(ft/s)|
+|:---:      |:---:              |:---:               |:---:               |
+|9.75       |1.03               |138.7               |1.09                |
+|9.68       |1.04               |135.8               |1.07                |
+|9.71       |1.03               |137.8               |1.088               |
+
+These results show that the average speed of the Croomba is about 1 foot per second which is the desired value. There is an average percent error of 4.546% on these measurements
 ### 30 Degree Incline
 Finally, a test was done to determine whether or not the Croomba could ascend up a 30 degree inclined plane as described in the signoffs. To accomplish this, the team put together some pieces of plywood at a 30 degree angle and set the Croomba on a course to see if it could make its way up the hill. This test was conducted 3 times.
 

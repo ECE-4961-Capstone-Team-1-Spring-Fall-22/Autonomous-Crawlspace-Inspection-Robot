@@ -176,7 +176,7 @@ For the first test we measured the height of the robot with a tape measure. This
 | 1            | 15.1875 inches  |
 | 2            | 15.1875 inches  |
 
-The above results show that the robot is 15.1875 inches tall. That number is less than 16 inches, and thus the height constraint has been met
+The above results show that the robot is 15.1875 inches tall. That number is less than 16 inches, and thus the height constraint has been met.
 ### Motor Encoders
 The purpose of this test is to confirm that the motor encoders and Arduino software are correctly measuring the rotational speed of the motors. The motor encoders are connected to GPIO pins on the Arduino, and the software reads the frequency of the signals and converts them into a rotational speed that is displayed in the serial monitor. Those values were compared against a measurement obtained by using a digital tachometer placed into contact with the drive wheel. The values in the table below are in units of RPMs.
 |Robot's Reading|Tachometer Reading|Percent Error|
@@ -187,7 +187,7 @@ The purpose of this test is to confirm that the motor encoders and Arduino softw
 |219.2          |219.9             |0.319%       |
 |220            |220.6             |0.272%       |
 
-These results show that the Arduino program for the motor encoders is correctly measuring its speed. The average percent error here is 0.291%.
+These results show that the Arduino program for the motor encoders is correctly measuring its speed.
 ### Linear Speed
 For this experiment the team wanted to measure the robot’s linear speed. The desired speed is about 1 foot per second.  To do this, we measured out 10 feet with a tape measure, and then used a stopwatch to determine how quickly the robot covered that distance. This gives us the average velocity of the robot. 
 

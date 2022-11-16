@@ -79,18 +79,30 @@ In adherence to movement specifications, the robot needs to be capable of maneuv
 
 As shown in the above table, the crawlspace inspection robot was able to maneuver through more than 70 % of the model crawlspace area, often maneuvering through more than 80 % of the test zone without getting stuck and needing assistance from the operator. As previously mentioned, the number of un-entered tiles was calcuated and then the total area of the tiles was determined and added together, resulting in the percentage of the crawlspace which the robot had not directly entered. It is important to note that while the robot did not enter 100 % of the tiles in the crawlspace area, not every tile must be entered for an incredibly detailed map to be created within the ROS software. Additionally, as shown later in this document, due to the area of the images captured, the ceiling of the crawlspace can be more than accurately mapped without having to enter each quantized tile of 9 inches by 9 inches. Therefore, it appears that the robot has maneuvered through enough of the crawlspace for the required information of the environment to be captured.  
 
-### Imaging
+### Imaging Quantity
 After adjusting the project's scope, imaging has been reprioritized and will take precedence over autonomous control. Because we plan to stitch the images of the crawlspace together using python and OpenCV, it is essential to test what percentage of the ceiling we can succesfully photograph. We tested this metric by treating the photographs taken as a jigsaw and then finding the area of any spots not recorded and comparing that area to the overall ceiling area.
 
 | Total Ceiling Area (ft^2) | Pictures Taken | Area Pictured (ft^2) |
 | :-----------------------: | :------------: | :------------------: |
-| 100                       | 33             | 7920                 |
-| 100                       | 36             | 8640                 |
-| 100                       | 54             | 12960                |
-| 100                       | 51             | 12240                |
-| 100                       | 42             | 10080                |
+| 87                       | 33             | 7920                 |
+| 87                       | 36             | 8640                 |
+| 87                       | 54             | 12960                |
+| 87                       | 51             | 12240                |
+| 87                       | 42             | 10080                |
 
 After allowing the robot to run its course, the number of pictures taken can be seen in the table above. The real area captured by each picture was then multiplied by the number of pictures taken to find a value for the full area pictured. While this value will feature some overlap, it is significantly large enough to convince the team that the robot saves pictures that will cover the entire ceiling area. Along with this metric, the photos were flipped through and ceiling landmarks were used to confirm that no part of the ceiling was missed.
+
+### Imaging Quality
+Python code was created using the openCV library to preform the image stitching. This test was preformed using both real pictures taken of the ceiling using the robots camera and pictures of a crawlspace ceiling. This allows us to confirm that the code will work both in a real crawlspace setting and will also work when using the camera. The pictures taken and the resultant stitching can be found [here](ImageStitchingTest).
+
+| Compared Pictures | Percent Overlap (%) |
+| ----------------- | ------------------- |
+| Test 1, 1 and 2   | 56                  |
+| Test 2, 1 and 2   | 55                  |
+| Test 2, 3 and 4   | 45                  |
+| Test 2, 5 and 6   | 52                  |
+
+Tests were performed on the pictures taken to find the necessary overlap percentage between pictures. It was found that this overlap was around 50% for all the stitchings that worked correctly.
 
 ### Wireless Access Point
 The main job of the system's wireless access point is to create a wireless network for communication between the system's main control, the Raspberry Pi, and the system operator in the case that manual control is needed. Adhering to the given constraints, the wireless access point operates on 2.4 GHz and is a private network which requires a password for use. To ensure that the wireless access point was sufficient for use, the distance and overall connectivity and control were tested four times. In each of the four tests, a laptop was connected to the Raspberry Pi at a distance of 100 feet, first on the fourth floor of Brown Hall and secondly on the third floor of Brown Hall. The system was then pinged with 32 bytes of information, and the response time in milliseconds from the laptop to the Raspberry Pi and back was recorded. Finally, the overall system control was tested by opening applications and interacting with the system peripherals such as one of the USB cameras over Microsoft Windows Remote Desktop Protocol.  

@@ -52,6 +52,9 @@ Trial Number (N)|Current(A) | Voltage (V)  |
 
 
 ## Navigation
+
+### The Model Crawlspace
+
 ### Mapping
 The main job of the system's lidar is to create a map of the surrounding area without having to be provided a manually drawn map by the operator. To ensure that the map is being generated correctly, the perimeter of our test area was measured and the percent error was calculated. The perimeter of the lidar-generated map was found by measuring the picture at a set zoom and creating a proportion from that value. The areas missed were then measured on the screen and the proportional value was applied to convert into the physical distance. The main focus of this experiment was areas along the perimeter which the lidar missed as the additional points it caught past the perimiter are blocked by the true wall. 
 

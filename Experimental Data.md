@@ -213,3 +213,4 @@ However, the team conducted additional experiments by lowering the angle of the 
 | 25            | No                 |
 | 20            | No                 |
 | 15            | Yes!               |
+| 15            | Yes!               |

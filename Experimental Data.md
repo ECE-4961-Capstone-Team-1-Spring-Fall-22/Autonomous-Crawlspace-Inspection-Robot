@@ -204,7 +204,7 @@ Finally, a test was done to determine whether or not the Croomba could ascend up
 
 The Croomba was unable to go up the steep slope. The team believes this deviation is caused by a lack of traction on the treads as well as a high center of mass on the robot. That high center of mass pulls the robot back down the hill and the front of the bot begins to lose trasction with the ramp. In short, the robot is too top and back heavy, and this leads to the robot wanting to flip onto its back like a turtle when ascending up the incline. 
 
-However, the team lowered the angle of the incline in order to find the maximum angle that the robot could traverse. The results are displayed in the table below.
+However, the team conducted additional experiments by lowering the angle of the incline in order to find the maximum angle that the robot could traverse. All of the results are displayed in the table below.
 | Incline Angle | Croomba Ascension? |
 |:---:          | :---:              |
 | 30            | No                 |

@@ -210,4 +210,6 @@ However, the team lowered the angle of the incline in order to find the maximum 
 | 30            | No                 |
 | 30            | No                 |
 | 30            | No                 |
-| 25            | Yes?               |
+| 25            | No                 |
+| 20            | No                 |
+| 15            | Yes!               |

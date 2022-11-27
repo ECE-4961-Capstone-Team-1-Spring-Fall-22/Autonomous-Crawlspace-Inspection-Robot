@@ -54,10 +54,11 @@ Trial Number (N)|Current(A) | Voltage (V)  |
 ## Navigation
 
 ### The Model Crawlspace
-To test the navigation functionality of the autonomous crawlspace inspection robot, a rectangular-shaped model crawlspace was created, with a length of 16.5 ft, a width of 6 ft, and a resulting area of 99 square feet. Floor tiles were used as a reference for quantifying the crawlspace area, with each floor tile having an area of 9 in by 9 in. The walls of the model crawlspace were made with various materials available in the laboratory and had a minimum height of 17 in and a maximum height of 36 in. An image of the model crawlspace is shown in the following figure found [here](ExperimentalPictures).
+![alt text](https://github.com/ECE-4961-Capstone-Team-1-Spring-Fall-22/Autonomous-Crawlspace-Inspection-Robot/blob/main/ExperimentalPictures/ModelCrawlspace/Model_Crawlspace.jpg)
+To test the navigation functionality of the autonomous crawlspace inspection robot, a rectangular-shaped model crawlspace was created, with a length of 16.5 ft, a width of 6 ft, and a resulting area of 99 square feet. Floor tiles were used as a reference for quantifying the crawlspace area, with each floor tile having an area of 9 in by 9 in. The walls of the model crawlspace were made with various materials available in the laboratory and had a minimum height of 17 in and a maximum height of 36 in. 
 
 ### Mapping
-The main job of the system's lidar is to create a map of the surrounding area without having to be provided a manually drawn map by the operator. To ensure that the map is being generated correctly, the perimeter of our test area was found by measuring the picture at a set zoom and creating a proportion from that value, and the percent error was calculated. The areas missed were then measured on the screen and the proportional value was applied to convert into the physical distance. The focus of this experiment was to identify the areas along the perimeter that the lidar missed as the additional points it caught past the perimeter are blocked by the true wall. The resultant map can be found [here](ExperimentalPictures).
+The main job of the system's lidar is to create a map of the surrounding area without having to be provided a manually drawn map by the operator. To ensure that the map is being generated correctly, the perimeter of our test area was found by measuring the picture at a set zoom and creating a proportion from that value, and the percent error was calculated. The areas missed were then measured on the screen and the proportional value was applied to convert into the physical distance. The focus of this experiment was to identify the areas along the perimeter that the lidar missed as the additional points it caught past the perimeter are blocked by the true wall. 
 
 | Perimeter (ft) | Measured Perimeter (ft) | Percent Error (%) |
 | :------------: | :---------------------: | :---------------: |
@@ -66,6 +67,8 @@ The main job of the system's lidar is to create a map of the surrounding area wi
 | 41             | 38.68                   | 6.00              |
 
 The results show that the lidar was able to successfully map the majority of the perimeter as it navigated throughout the crawlspace. In the worst case, the robot only failed to map 6.14% of the model environment. However, this percentage should be mostly negligible because none of the gaps in the walls of the model crawlspace are large enough for the robot to fit through. 
+
+![alt text](https://github.com/ECE-4961-Capstone-Team-1-Spring-Fall-22/Autonomous-Crawlspace-Inspection-Robot/blob/main/ExperimentalPictures/ROSGeneratedMaps/ROS_Crawlspace_Map_V1.PNG)
 
 ### Maneuvering 
 In adherence to movement specifications, the robot needs to be capable of maneuvering through 70 % of the model crawlspace. To test adherence to this requirement, the team members counted which of the floor tiles in the model crawlspace the robot had not touched, and therefore how much of the total area of the crawlspace the robot had not maneuvered through. Additionally, the robot was initially placed in different corners of the model crawlspace to test the behavior from different initial positions. 
@@ -96,7 +99,7 @@ After adjusting the project's scope, imaging has been reprioritized and will tak
 After allowing the robot to run its course, the number of pictures taken can be seen in the table above. The real area captured by each picture was then multiplied by the number of pictures taken to find a value for the full area pictured. While this value will feature some overlap, it is significantly large enough to convince the team that the robot saves pictures that will cover the entire ceiling area. Along with this metric, the photos were flipped through and ceiling landmarks were used to confirm that no part of the ceiling was missed.
 
 ### Imaging Quality
-Python code was created using the OpenCV library to perform the image stitching. This test was performed using both real pictures taken of the ceiling using the robot's camera and pictures of a crawlspace ceiling. This allows us to confirm that the code will work both in a real crawlspace setting and will also work when using the camera. The pictures were taken and the resultant stitching can be found [here](ExperimentalPictures).
+Python code was created using the OpenCV library to perform the image stitching. This test was performed using both real pictures taken of the ceiling using the robot's camera and pictures of a crawlspace ceiling. This allows us to confirm that the code will work both in a real crawlspace setting and will also work when using the camera. 
 
 | Compared Pictures | Percent Overlap (%) |
 | ----------------- | ------------------- |
@@ -106,6 +109,8 @@ Python code was created using the OpenCV library to perform the image stitching.
 | Test 2, 5 and 6   | 52                  |
 
 Tests were performed on the pictures taken to find the necessary overlap percentage between pictures. It was found that this overlap was around 50% for all the stitchings that worked correctly.
+
+![alt text](https://github.com/ECE-4961-Capstone-Team-1-Spring-Fall-22/Autonomous-Crawlspace-Inspection-Robot/blob/main/ExperimentalPictures/Camera2_Results.png)
 
 ### Wireless Access Point
 The main job of the system's wireless access point is to create a wireless network for communication between the system's main control, the Raspberry Pi, and the system operator in the case that manual control is needed. Adhering to the given constraints, the wireless access point operates on 2.4 GHz and is a private network that requires a password for use. To ensure that the wireless access point was sufficient for use, the distance and overall connectivity, and control were tested four times.  

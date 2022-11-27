@@ -1,7 +1,7 @@
 # Autonomous-Crawlspace-Inspection-Robot
 Tennessee Tech ECE 4961 Capstone Project Spring-Fall 2022
 
-# Goals and Aspirations of The Project: 
+## Goals and Aspirations of The Project: 
 
 Crawl spaces grant convenient access to the plumbing, duct
 work, and electrical wiring of a house, but they often present
@@ -53,23 +53,21 @@ throughout a crawlspace environment, while simultaneously
 recording different environmental measurements including:
 humidity, temperature, and wood moisture levels.
 
-# Current Robot Capabilities
+## Current Robot Capabilities
 
-Because assembly has not begun yet, at this point the robot can't do anything. However, conceptually several of the capabilities have been fleshed out.
+The first iteration of the project focused on setting up the hardware systems. Sensors, microcontrollers, motors, and power circuits were designed and implemented as part of a larger multi-group project. The following details the current capabilities of the robot.
 
-* Sensors for navigation are chosen
-* The main MCU is chosen
-* The lidear system is designed
-* The inital power design is completed
-  *Will need more of the system designed before values can be locked in and approved
-*The Motors and motor drive system is designed
-*A chassis has been chosen
-*The moisture probe sensors has been fully designed
-*The humidity and temperature sensors are designed
+* Low level autonomy which allows the robot to naviagte trhoughout an enclosed area
+* Creating a map of the area using the SLAM algorithm
+* Take pictures throughout an area and stich simple areas into a singular, larger image
+* Collect humidity, temperature, and moisture content data and overlay information on images
+* Supply power for consistent operation across all components
+* Move robot through serial commands and return encoder data to the main microcontroller
+* Manaul control through text-based commands while also streaming live video to the operator
 
 For more detail on current designs, see files in sub-system directories
 
-# Who Are We? Mr. Jesse Robert's ECE 4961 Capstone Team 1
+## Who Are We? Mr. Jesse Robert's ECE 4961 Capstone Team 1
 
 * James (Jim) Camp - Senior Mechatronics Major - Envronmental Sensor Subsystem Developer - Delegator 
 * John-Caleb (JC) Williams - Senior Electrical Engineering Major - Navigation Subsystem Developer - Treasurer

@@ -31,10 +31,10 @@ A picture of the final system can also be found below
 
 ## Who Are We? Mr. Jesse Robert's ECE 4961 Capstone Team 1
 
-* James (Jim) Camp - Senior Mechatronics Major - Environmental Sensor Subsystem Developer - Delegator 
-* John-Caleb (JC) Williams - Senior Electrical Engineering Major - Navigation Subsystem Developer - Treasurer
-* John Harris - Senior Electrical Engineering Major - Power Subsystem Developer - Secretary
-* Joseph Thomas - Senior Electrical Engineering Major - Movement Subsystem Developer - Social 
+* James (Jim) Camp - Senior Electrical Engineering Major, Mechatronics Concentration - Environmental Sensor Subsystem Developer - Delegator 
+* John-Caleb (JC) Williams - Senior Electrical Engineering Major, Electromagnetics Concentration - Navigation Subsystem Developer - Treasurer
+* John Harris - Senior Electrical Engineering Major, Controls Concentration - Power Subsystem Developer - Secretary
+* Joseph Thomas - Senior Electrical Engineering Major, Power Concentration - Movement Subsystem Developer - Social 
 
 * Mr. Jesse Roberts - Professor and Faculty Advisor
 

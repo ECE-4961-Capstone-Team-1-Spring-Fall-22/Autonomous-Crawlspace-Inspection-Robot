@@ -54,7 +54,7 @@ Trial Number (N)|Current(A) | Voltage (V)  |
 ## Navigation
 
 ### The Model Crawlspace
-![alt text](https://github.com/ECE-4961-Capstone-Team-1-Spring-Fall-22/Autonomous-Crawlspace-Inspection-Robot/blob/main/ExperimentalPictures/ModelCrawlspace/Model_Crawlspace.jpg)
+![alt text](https://github.com/ECE-4961-Capstone-Team-1-Spring-Fall-22/Autonomous-Crawlspace-Inspection-Robot/blob/main/Pictures%20and%20Videos/Experiment_Pictures/ModelCrawlspace/Model_Crawlspace.jpg)
 To test the navigation functionality of the autonomous crawlspace inspection robot, a rectangular-shaped model crawlspace was created, with a length of 16.5 ft, a width of 6 ft, and a resulting area of 99 square feet. Floor tiles were used as a reference for quantifying the crawlspace area, with each floor tile having an area of 9 in by 9 in. The walls of the model crawlspace were made with various materials available in the laboratory and had a minimum height of 17 in and a maximum height of 36 in. 
 
 ### Mapping
@@ -68,7 +68,7 @@ The main job of the system's lidar is to create a map of the surrounding area wi
 
 The results show that the lidar was able to successfully map the majority of the perimeter as it navigated throughout the crawlspace. In the worst case, the robot only failed to map 6.14% of the model environment. However, this percentage should be mostly negligible because none of the gaps in the walls of the model crawlspace are large enough for the robot to fit through. 
 
-![alt text](https://github.com/ECE-4961-Capstone-Team-1-Spring-Fall-22/Autonomous-Crawlspace-Inspection-Robot/blob/main/ExperimentalPictures/ROSGeneratedMaps/ROS_Crawlspace_Map_V1.PNG)
+![alt text](https://github.com/ECE-4961-Capstone-Team-1-Spring-Fall-22/Autonomous-Crawlspace-Inspection-Robot/blob/main/Pictures%20and%20Videos/Experiment_Pictures/ROSGeneratedMaps/ROS_Crawlspace_Map_V1.PNG)
 
 ### Maneuvering 
 In adherence to movement specifications, the robot needs to be capable of maneuvering through 70 % of the model crawlspace. To test adherence to this requirement, the team members counted which of the floor tiles in the model crawlspace the robot had not touched, and therefore how much of the total area of the crawlspace the robot had not maneuvered through. Additionally, the robot was initially placed in different corners of the model crawlspace to test the behavior from different initial positions. 
@@ -110,7 +110,7 @@ Python code was created using the OpenCV library to perform the image stitching.
 
 Tests were performed on the pictures taken to find the necessary overlap percentage between pictures. It was found that this overlap was around 50% for all the stitchings that worked correctly.
 
-![alt text](https://github.com/ECE-4961-Capstone-Team-1-Spring-Fall-22/Autonomous-Crawlspace-Inspection-Robot/blob/main/ExperimentalPictures/Camera2_Results.png)
+![alt text](https://github.com/ECE-4961-Capstone-Team-1-Spring-Fall-22/Autonomous-Crawlspace-Inspection-Robot/blob/main/Pictures%20and%20Videos/Experiment_Pictures/Camera2_Results.png)
 
 ### Wireless Access Point
 The main job of the system's wireless access point is to create a wireless network for communication between the system's main control, the Raspberry Pi, and the system operator in the case that manual control is needed. Adhering to the given constraints, the wireless access point operates on 2.4 GHz and is a private network that requires a password for use. To ensure that the wireless access point was sufficient for use, the distance and overall connectivity, and control were tested four times.  

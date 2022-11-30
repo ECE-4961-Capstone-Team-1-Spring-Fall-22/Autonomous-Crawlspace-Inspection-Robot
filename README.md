@@ -38,7 +38,7 @@ A picture of the final system can also be found below
 
 * Mr. Jesse Roberts - Professor and Faculty Advisor
 
-* Project Stakeholders - This project was developed for anyone who needs to inspect their crawlspace. Whether
+* Project Stakeholders - This project was developed for anyone who needs to inspect their crawlspace. This includes homeowners, building inspectors, and renovators. The system is also a great solution for anyone experiencing issues with mold or unsafe crawlspace conditions.
 
 # Repo Guide
 This repository contains the entirety of the Autonomous Crawlspace Inspection Robot’s REV1 design files. The folder breakdown is as follows
@@ -49,7 +49,4 @@ This repository contains the entirety of the Autonomous Crawlspace Inspection Ro
 * Navigation – This system handles the mapping and autonomy. Interfacing with the Raspberry Pi, LIDAR, distance sensors, and remote access are also included in this subsystem.
 * Pictures and Videos – A repository for all the pictures and videos taken throughout the experimentation and testing.
 * Power - This subsystem is responsible for providing continuous power to all the components. Circuit protection and power filtering are also integrated into this subsystem.
-
-
-
 

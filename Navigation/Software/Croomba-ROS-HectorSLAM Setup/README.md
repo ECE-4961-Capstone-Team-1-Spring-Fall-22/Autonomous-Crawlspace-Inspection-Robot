@@ -2,7 +2,7 @@
 
 ## What does the software do? 
 
-To set up the Croomba, use ROS, and use Hector SLAM for mapping of an environment, multiple command terminals are used, also known as shell programming. Below, all steps for setting up the Croomba to work with ROS, Combined_Code.py, and the Wireless Access Point are discussed. To minimize error, follow the command terminal scripts below in chronological order. 
+To set up the Croomba, use ROS, and use Hector SLAM for mapping of an environment, multiple command terminals are used, also known as shell programming. Below, all steps for setting up the Croomba to work with ROS, Navigation_Code.py, and the Wireless Access Point are discussed. To minimize error, follow the command terminal scripts below in chronological order. 
 
 ## Dependencies 
 
@@ -148,9 +148,9 @@ roslaunch hector_slam_launch tutorial.launch
 
 The RVIZ window should now be open. Click “add” in the bottom left, click “by topic”, select “Laser Scan”, and finally click add.  
 
-### Open a new command terminal for the following commands (will be utilizing the Combined_Code.py script, follow setup for that code): 
+### Open a new command terminal for the following commands (will be utilizing the Navigation_Code.py script, follow setup for that code): 
 
-python filepath/Combined_Code.py 
+python filepath/Navigation_Code.py 
 
 Once robot has stopped moving, open another command terminal and enter: 
 

@@ -2,18 +2,16 @@
 
 
 ## Specs, Design, and Analysis:
-This system was required to analyze data when triggered by the overall Raspberry Pi
-It was also required to be modular and include a temperature sensor, humidity sensor, and wood moistrue probe
+This system is designed to collect 3 types of sensor data while also taking pictures of the crawlspace ceiling. The sensor data consists of the following
+* Humidity
+* Temperature 
+* Wood moisture content
 
-To match these rquirements, a system was developed where each sensor had its own MCU and returns data to the Raspberry Pi using SPI protocal
-Each MCU will runs its respective sensor to collect a predetermined number of samples and then return the average to the Pi
-A tag is inlcuded with the number so the Pi can differentiate between what was being sensed
-This also allows future sensors to be easily added.
+The humidity and temperature system consits of prebuilt sensors which interface with Arduino microcontrollers. However, the mositure content probe had to be custom built. It was made by creating a voltage divider that can switch the value of R1 depending on the range needed to measure. These three sensors each used their own microcontroller to maintain modularity.
 
-A wood moistrue probe was also included
-This includes a two phase linear actuator design to raise the probe from 15 inches to 48 inches
-Once in the wood, a resistance measurment is taken to detect MC%
+A board stack was deisgned to allow for simple interfacing between the sensor modules. This works by using 3 PCBs which are sized the same and can be mounted on top of each other using 1 inch tall standoffs. The power connections for each board are passed throughout the staack using header pins with a long tail. This also allows for any new sensors to be snapped on top of the existing sensors and easily added to the system.
 
-Circuit Analysis as well as calculations were performed to verify each sysem
+The final part of this subsystem is the image collection. Pictures are taken throughout operation and associated to a set of sensor data. The moisture content is displayed on each picture before being stitched together. Temperature and humidity are treated as an array and have the averages and standard deviations calculated. These values are then used to determine if any outliers exist and dispaly the location of these outliers on the images.
 
-This README file constitutes a summary, for detailed design information and analysis of each component see signoff files in this repository
+This README file constitutes a summary, for detailed design information and analysis of each component see signoff files in this repository.
+A seperate README exists for the software in the relevant sub-directory.

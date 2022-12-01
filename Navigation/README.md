@@ -26,6 +26,7 @@ SVPro HD USB 1080p Cameras (Ceiling/Wall Visual Capture Device)
 
 Voltaic USB LED Emergency Light (Camera Illumination) 
 
+## Software, Signoffs, and Subsystem Schematic
 The “Software” folder contains the Navigation Python script used to navigate throughout the crawl space, communicate with the Movement Subsystem Arduino, and take images of the crawl space ceiling. Also, this script allows the user to see live video-feed from the wall-oriented HD Camera if manual control is needed.  
 
 The “Signoff” folder contains research, analysis, and validation of the chosen components  adherence to given constraints and specifications of the Navigation Subsystem.  

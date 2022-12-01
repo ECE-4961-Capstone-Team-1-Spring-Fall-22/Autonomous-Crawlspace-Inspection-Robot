@@ -7,10 +7,14 @@ of this system is to provide the robot with the ability to move.
 This system has been designed to:
 
 Communicate with the Navigation System where it receives directional instructions and sends back an instantaneous speed
+
 Fit within the 16 inch height constraint and house all the hardware
+
 Allow for variations in motor speed by using pulse width modulation
+
 Move the robot forwards and backwards, and turn left and right
 
+# Descriptions
 An Arduino Mega is the microcontroller for this system. It communicates with the Navigation system, sends signals to the motor drivers, and measures the speed.
 
 The design for the robot's chassis started with a robotics kit purchased from amazon, but it was customized and turned into the towered, modular design that is present today.

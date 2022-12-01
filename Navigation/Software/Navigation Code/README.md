@@ -36,6 +36,6 @@ pip3 install numpy
 
 # How to Run? 
 
-To run this program, open a new command terminal. In the command terminal, type “Arduino”. The Arduino IDE is used to identify which USB ports the four Arduinos are connected to. Once the proper USB ports are identified, change the USB variables in lines 12-15 from “ACMn” to the appropriate USB port. Next, open another command terminal and enter the following (note: the file path for the code is everything BEFORE "/Combined_Code.py") 
+To run this program, open a new command terminal. In the command terminal, type “Arduino”. The Arduino IDE is used to identify which USB ports the four Arduinos are connected to. Once the proper USB ports are identified, change the USB variables in lines 12-15 from “ACM#” to the appropriate USB port. Next, open another command terminal and enter the following (note: the file path for the code is everything BEFORE "/Combined_Code.py") 
 
 Python /home/ubuntu/Desktop/ECE_4961_4971_Autonomous_Crawlspace_Inspection_Robot/Combined_Code.py 

@@ -12,7 +12,7 @@ The following shell scripts require a Windows master remote machine with Windows
 
 To install the previously mentioned dependencies, enter the shown commands into the Ubuntu terminal on the Raspberry Pi 4B. This is a long installation process, however, all of the following information is important for the code to execute. Note, the current version of the Croomba has everything installed so the installation step can be skipped of using the current version of the Croomba.  
 
-Setting Up Wifi (TTU Wifi EagleNet As Example): 
+### Setting Up Wifi (TTU Wifi EagleNet As Example): 
 
 sudo apt update 
 
@@ -40,7 +40,7 @@ ifconfig
 
 Check that ip4 address is in the format of “10.0……”, if so continue, if not trouble shoot wifi network name and password to make sure that you are connected to EagleNet (Internet) 
 
-Installing XRDP for Windows Desktop Remote:
+### Installing XRDP for Windows Desktop Remote:
 
 sudo apt install xrdp 
 
@@ -48,7 +48,7 @@ sudo adduser ubuntu
 
 sudo ufw allow from “IP Address of Master Windows Machine” 
 
-Installing ROS Noetic, ROS Navigation Stack, ROS RPlidar, RVIZ, and ROS Hector SLAM:
+### Installing ROS Noetic, ROS Navigation Stack, ROS RPlidar, RVIZ, and ROS Hector SLAM:
 
 sudo sh -c ‘echo “deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main” 
 
@@ -84,7 +84,7 @@ catkin_make
 
 To run these scripts for an actual test, follow the below shell programming command terminal scripts in chronological order. Again, since ROS is very dependent on shell programming, multiple terminals are needed and will be specified when needed below.  
 
-Setting Up Wireless Access Point (Connect Back To WAP): 
+### Setting Up Wireless Access Point (Connect Back To WAP): 
 
 cd /etc/netplan/50-cloud-init.yaml 
 
@@ -110,7 +110,7 @@ sudo ufw allow from “IP Address of Master Windows Machine”
 
 Connect to the Raspberry Pi 4B through Windows Remote Desktop by entering Raspberry Pi 4B address. User will then be prompted to enter the username and password of the Raspberry Pi 4B and user will then be able to remotely control the Croomba. 
 
-On the Raspberry Pi 4B through the Windows Remote Desktop:
+### On the Raspberry Pi 4B through the Windows Remote Desktop:
 
 Ifconfig 
 

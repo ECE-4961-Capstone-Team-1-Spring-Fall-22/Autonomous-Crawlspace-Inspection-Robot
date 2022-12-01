@@ -124,13 +124,13 @@ ROS_MASTER_URI=http://”IP of Raspberry Pi 4B”:11311
 
 ROS_HOSTNAME=”IP of Raspberry Pi 4B” 
 
-Save and exit the bashrc file then enter the following commands: 
+### Save and exit the bashrc file then enter the following commands: 
 
 source ~/.bashrc 
 
 roscore 
 
-Now, open a new command terminal for the following commands: 
+### Open a new command terminal for the following commands: 
 
 cd catkin_ws 
 
@@ -138,7 +138,7 @@ source devel/setup.bash
 
 roslaunch rplidar_ros rplidar.launch 
 
-Now, open a new command terminal for the following commands: 
+### Open a new command terminal for the following commands: 
 
 cd catkin_ws 
 
@@ -148,7 +148,7 @@ roslaunch hector_slam_launch tutorial.launch
 
 The RVIZ window should now be open. Click “add” in the bottom left, click “by topic”, select “Laser Scan”, and finally click add.  
 
-Now, open a new command terminal for the following commands (will be utilizing the Combined_Code.py script, follow setup for that code): 
+### Open a new command terminal for the following commands (will be utilizing the Combined_Code.py script, follow setup for that code): 
 
 python filepath/Combined_Code.py 
 

@@ -1,14 +1,14 @@
-## Croomba-ROS-HectorSLAM Setup
+# Croomba-ROS-HectorSLAM Setup
 
-# What does the software do? 
+## What does the software do? 
 
 To set up the Croomba, use ROS, and use Hector SLAM for mapping of an environment, multiple command terminals are used, also known as shell programming. Below, all steps for setting up the Croomba to work with ROS, Combined_Code.py, and the Wireless Access Point are discussed. To minimize error, follow the command terminal scripts below in chronological order. 
 
-# Dependencies 
+## Dependencies 
 
 The following shell scripts require a Windows master remote machine with Windows Remote Desktop. The Raspberry Pi 4B requires the installation of Ubuntu 20.04 (Server), Light Ubuntu Desktop GUI, XRDP, python3.7, ROS Noetic, ROS Navigation Stack, ROS Hector SLAM, ROS RPlidar, and RVIZ. 
 
-# How to Install? 
+## How to Install? 
 
 To install the previously mentioned dependencies, enter the shown commands into the Ubuntu terminal on the Raspberry Pi 4B. This is a long installation process, however, all of the following information is important for the code to execute. Note, the current version of the Croomba has everything installed so the installation step can be skipped of using the current version of the Croomba.  
 
@@ -48,7 +48,7 @@ sudo adduser ubuntu
 
 sudo ufw allow from “IP Address of Master Windows Machine” 
 
-Installing ROS Noetic, ROS Navigation Stack, ROS RPlidar, RVIZ, and ROS Hector SLAM 
+Installing ROS Noetic, ROS Navigation Stack, ROS RPlidar, RVIZ, and ROS Hector SLAM:
 
 sudo sh -c ‘echo “deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main” 
 
@@ -80,7 +80,7 @@ cd ~/catkin_ws/
 
 catkin_make 
 
-# How to Run? 
+## How to Run? 
 
 To run these scripts for an actual test, follow the below shell programming command terminal scripts in chronological order. Again, since ROS is very dependent on shell programming, multiple terminals are needed and will be specified when needed below.  
 

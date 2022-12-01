@@ -1,10 +1,17 @@
 # Software Writeup
+
+## What the code does
 This file contains 4 programs that make up the environmental sensing system's software.
 * The Temp Arduino file handles receiving data from the temperature sensor over I2C and sending that data to the main MCU using serial communication.
 * The Humidity Arduino file handles receiving data from the temperature sensor over a single digital wire and sending that data to the main MCU using serial communication.
 * The MC Arduino file handles the moisture content measurement. This code flips through 5 digital outputs to control the values of R1 in the voltage divider circuit. It takes resistance measurements at each point and averages the acceptable measurements before converting from Ohms to %MC.
 * The Stitching python file handles the image stitching. The files are automatically sorted into an array and have their MC values overlaid on the image. The images are then stitched together by manually choosing which pictures were taken consecutively.
 - This code also handles reading the temperature and humidity values from a text file, averaging the values, and displaying any values which are outside the acceptable range of 2 standard deviations.
+
+## Dependencies
+* Adafruit DHT Library (Arduino Internal)- Used to pull data from the humidity sensor over a single-wire data line. 
+* Adafruit MCP9808 Library (Arduino Internal) - Used to pull data from the temperature sensor over I2C protocol. 
+* https://github.com/KEDIARAHUL135/PanoramaStitchingP2 - Provided basic algorithm for stitching 2 images together and pulling images into an array.
 
 # Code Instructions
 For all Arduino codes, the instructions are the same.
